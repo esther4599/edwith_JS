@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>WEB1-Welcome</title>
+  <meta charset="utf-8">
+</head>
+<body style = "background-color:white; color:black;">
+  <h1><a href="index.html">WEB</a></h1>
+
+  <!-- 기본 모드가 day 이므로 초기 모드는 night -->
+  <!-- value를 어떻게 가져올까? -->
+  <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#night_day').value = 'day'
+    }
+    else{
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'night'
+    }">
+
+  <ol>
+    <li><a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>
+  <h2>WEB</h2>
+  <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
+  </p>
+</body>
+</html>
+
+<!-- getElementById 이용하기
+==> 이미 선택자에 id가 명시되어 있음으로 #을 뺀 아이디만 파라미터로 넘기기
+==> 아래 코드처럼 element를 선택하고 value를 가져와야지 아니면 다른 태그의 값들도 함께 변경된다.
+
+<input id="night_day" type="button" value="night" onclick="
+  if(document.getElementById('night_day').value === 'night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    document.getElementById('night_day').value = 'day'
+  }
+  else{
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.getElementById('night_day').value = 'night'
+  }">
+ -->

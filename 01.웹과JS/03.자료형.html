@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //자료형 test
+      var a = "hello world"
+      document.write(a.length) //11 출력
+      document.write(a.toUpperCase()) //HELLO WORLD 출력
+
+      //인덱스는 0부터 시작
+      document.write(a.indexOf('o')) //4 출력
+      document.write(a.indexOf('world')) //6 출력
+
+      var b = "  hello      world    "
+      document.write(b.trim()) //hello world 출력. 공백 제거
+
+      document.write(1+1) //2 출력
+      document.write("1"+"1") //11 출력
+    </script>
+  </body>
+</html>
+
+<!-- JS의 데이터 타입
+    1. boolean    2. null   3. Undefined
+
+    4. Number
+       alert(1+1) => 화면에 2 출력
+       산술연산자 => +, -, /, %, *
+
+    5. String
+       "hello", 'hi' => 모두 String
+       String.length => 문자열 길이
+       String.toUpperCase() => 소문자를 대문자로 변경
+       String 같은 것을 propertiy 라고 부른다.
+       => 다른 값과 연관된 값.한 객체 내의 멤버 변수가 이에 해당 될 수 있으며 다양한 경우들이 있다.
+          메소드는 보통 프로퍼티로도 메소드로도 볼 수 있다.
+
+    6. Symbol
+-->

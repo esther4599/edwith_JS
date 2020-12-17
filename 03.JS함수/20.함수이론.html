@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+    <ul>
+      <script>
+        function two(){
+          document.write('<li>2-1</li>');
+          document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+      </script>
+    </ul>
+
+    <h2>Parameter & Argument</h2>
+    <script>
+      function onePlusOne(){
+        document.write(1+1+'<br>');
+      }
+      onePlusOne();
+
+      function sum(left, right){ document.write(left+right+'<br>' )}
+      sum(2,3);
+      sum(4,3);
+
+      function sumRed(left, right){ document.write('<div style="color:red">'+ (left+right) +'</div>' )}
+      sumRed(13,5)
+    </script>
+
+    <h2>Return</h2>
+    <!-- 표현식
+      1+1 은? 2 이다. 이런 것을 표현식이라 부른다.
+      위의 sum 함수를 표현식으로 만든다면??
+      sum(1,4) 를 했을 때 5가 넘어오면 표현식과 유사해진다.
+    -->
+    <script>
+      function sumReturn(left, right){
+        return left+right
+      }
+
+      document.write(sumReturn(20,8))
+      document.write('<div style="color:blue">'+sumReturn(10,8)+'</div>')
+      document.write('<div style="font-size:2rem">'+sumReturn(4,8)+'</div>')
+    </script>
+  </body>
+</html>

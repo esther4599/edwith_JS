@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      //python의 dictionary와 유사한 것 같다.
+      var coworkers = {
+        "programmer" : "egoing",
+        "designer" : "leezche"
+      }
+
+      document.write("programmer: " + coworkers.programmer+"<br>")
+      document.write("designer: " + coworkers.designer+"<br>")
+
+      coworkers.bookkeeper = "duru"
+      document.write("bookkeeper: " + coworkers.bookkeeper+"<br>")
+
+      //data scientist 라고 띄어쓰기를 입력하고 싶을 때
+      coworkers["data scientist"] = "taeho"
+      document.write("data scientist: " + coworkers["data scientist"])
+    </script>
+
+    <h2>Iterate</h2>
+    <script>
+      for(var key in coworkers) {
+        document.write(key + ": " + coworkers[key] + "<br>")
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 객체에서 순회 검색하기
+    javascript object iterate 검색
+-->

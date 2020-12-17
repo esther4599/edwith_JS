@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+  </head>
+  <body>
+    <h1> Test for JS</h1>
+    <script>
+      // document.write('hello world');
+      function keyEvent() {
+        var keyCode = event.keyCode;
+        alert(keyCode);
+      }
+    </script>
+    <input type="button" name="hi" value="onclick" onclick="alert('hi')">
+    <input type="text" onchange="alert('changed')">
+    <input type="text" name="" onkeydown="keyEvent(this)">
+    <input type="text" name="" onkeypress="keyEvent(this)">
+  </body>
+</html>
+
+<!--script 태크 안의 내용만 JS로 인식된다.-->
+
+<!-- keyEvent
+    onclick = 마우스로 클릭했을 때 이벤트 발생
+    onchange = 값을 변화시키고 다른 곳을 눌렀을 때 이벤트 발생
+
+    ** 아래는 이벤트들은 차이가 있다
+    onkeydown = 키보드가 눌렸을 때 이벤트 발생 => keycode 인식 O, value 입력 전에 발생
+    onkeyup = 키보드를 누르고 떼었을 때 이벤트 발생 => keycode 인식 O, value 입력 후 발생
+    onkeypress = 키보드를 눌렀을 때 이벤트 발생 => ASCII 값 인식 O, vaule 입력 전에 발생
+
+    외에도 다양한 event 존재
+-->
+
+<!-- 아톰 파일 실행
+    아톰에 script 설치하기
+    1) packages -> setting view install packages/themes 클릭
+    2) script 검색
+    3) rgbkrk라는 분이 만든 파일 다운로드
+
+    아톰에서 파일 실행하기
+    1) 상단 메뉴 packages -> script -> run script
+    2) command + i
+
+    아톰에서 파일 실행 멈추기
+    1) 상단 메뉴 packages -> script -> stop script
+    2) control + c
+-->
+
+<!-- JS를 실핼하는 실용적인 방법, console
+    웹 페이지 -> 우클릭 -> 검사 -> 상단 탭에서 console 선택
+    -> alert('The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.'.length)
+    -> 위의 코드 입력후 command + enter
+    ======================================
+    검사 창에서 element 에서 esc를 누르면 하단에 console창이 뜬다.
+    ======================================
+    어디에 이용할 수 있을까?
+    댓글 창에서 당첨자 뽑기
+-->

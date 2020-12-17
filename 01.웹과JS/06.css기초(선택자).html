@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>WEB1-Welcome</title>
+  <meta charset="utf-8">
+  <style media="screen">
+    .js{
+      font-weight : bold;
+      color : red;
+    }
+    #first{
+      color: green;
+    }
+    span{
+      color: blue;
+    }
+  </style>
+</head>
+<body style = "background-color:white; color:black;">
+  <h1><a href="index.html">WEB</a></h1>
+  <h2 style="background-color:coral;color:powderblue;">JavaScript</h2>
+  <p>
+    <span class="js" id="first">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside <span>HTML</span> and <span>CSS</span>, <span class="js">JavaScript</span> is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in <span class="js">JavaScript</span> engine. Each of the many <span class="js">JavaScript</span> engines represent a different implementation of <span class="js">JavaScript</span>, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+</p>
+</body>
+</html>
+
+<!-- css 살펴보기 / js로 태그 선택하기
+    style 작성
+    <body style = "background-color:black; color:white;">
+    color = 글자색
+
+    style="" => 따옴표 안에는 css 문법
+
+    검색 -> css background color 라고 검색
+ -->
+
+ <!-- div vs span
+    div = 줄바꿈이 자동으로 된다. 화면의 폭을 전부 사용
+    span = 화면의 폭중 일부만 사용.
+-->
+
+<!-- class 선택자
+.js{
+  font-weight : bold;
+  color : red;
+}
+
+class 지정 -> .class명 / clas는 여러개 지정이 가능
+-->
+
+<!-- id 선택자
+#first{
+  color: green;
+}
+
+id 지정 -> #id명 / id는 단 하나만 가르킨다.
+** class와 id를 모두 갖고 있는 경우 class 적용 후 id를 적용한다.
+== 중복된 스타일은 id에 지정된 스타일에 적용된다.**
+ -->
+
+ <!-- 태그 선택자
+ span{
+   color: blue;
+ }
+
+ 태그 지정 -> 별 다른 지정 방법 없음. 그냥 태그
+ ** 적용이 약한 순서 : 태그 -> 클래스 -> 아이디
+ -->
